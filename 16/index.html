@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .btn-outline-primary{
+            border-color: rgb(19, 22, 21);
+            color: brown;
+            background-color: rgb(241, 241, 165);
+        }
+        .btn-outline-primary:hover{
+            background-color: rgb(70, 156, 196);
+            border-color: blueviolet;
+            color: blue;
+            transition: 1s;
+        }
+
+          .btn-outline-secondary{
+            border-color: rgb(228, 111, 33);
+            color: rgb(162, 108, 187);
+            background-color: rgb(255, 165, 165);
+        }
+         .btn-outline-secondary:hover{
+            background-color: rgb(12, 224, 178);
+            border-color: rgb(3, 3, 3);
+            color: green;
+            transition: 1s;
+        }
+
+             .btn-outline-success{
+            border-color: rgb(228, 111, 33);
+            color: rgb(162, 108, 187);
+            background-color: rgb(208, 255, 239);
+        }
+         .btn-outline-success:hover{
+            background-color: rgb(12, 224, 178);
+            border-color: rgb(3, 3, 3);
+            color: rgb(128, 0, 17);
+            transition: 1s;
+        }
+
+         .btn-outline-danger{
+            border-color: rgb(3, 3, 3);
+            color: rgb(1, 53, 12);
+            background-color: rgb(72, 101, 179);
+        }
+         .btn-outline-danger:hover{
+            background-color: rgb(186, 201, 196);
+            border-color: rgb(3, 3, 3);
+            color: rgb(68, 128, 0);
+            transition: 1s;
+        }
+
+        
+         .btn-outline-warning{
+            border-color: rgb(226, 162, 88);
+            color: rgb(0, 0, 0);
+            background-color: rgb(154, 211, 238);
+        }
+         .btn-outline-warning:hover{
+            background-color: rgb(83, 78, 94);
+            border-color: rgb(3, 3, 3);
+            color: rgb(28, 0, 128);
+            transition: 1s;
+        }
+
+        
+         .btn-outline-info{
+            border-color: rgb(223, 206, 206);
+            color: rgb(0, 0, 0);
+            background-color: rgb(224, 235, 133);
+        }
+         .btn-outline-info:hover{
+            background-color: rgb(114, 190, 139);
+            border-color: rgb(3, 3, 3);
+            color: rgb(128, 0, 17);
+            transition: 1s;
+        }
+
+        
+         .btn-outline-light{
+            border-color: rgb(187, 186, 145);
+            color: rgb(12, 200, 224);
+            background-color: rgb(208, 255, 239);
+        }
+         .btn-outline-light:hover{
+            background-color: rgb(228, 105, 105);
+            border-color: rgb(3, 3, 3);
+            color: rgb(128, 0, 17);
+            transition: 1s;
+        }
+
+        
+         .btn-outline-dark{
+            border-color: rgb(3, 3, 3);
+            color: rgb(145, 209, 143);
+            background-color: rgb(235, 245, 241);
+        }
+         .btn-outline-dark:hover{
+            background-color: rgb(199, 13, 143);
+            border-color: rgb(3, 3, 3);
+            color: rgb(0, 0, 0);
+            transition: 1s;
+        }
+        h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1:hover{
+            color: rgb(163, 14, 14);
+            cursor: pointer;
+            text-align: left;
+            text-transform: uppercase;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            font-weight: bolder;
+
+        }
+    </style>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <h1>Bootstrap Buttons</h1>
+
+    <p id="pri"></p>
+    <p id="sec"></p>
+    <p id="suc"></p>
+    <p id="dan"></p>
+    <p id="war"></p>
+    <p id="info"></p>
+    <p id="light"></p>
+    <p id="dark"></p>
+    <!-- Example Code Start-->
+    <button onclick="pri_btn()" type="button" class="btn btn-outline-primary">Primary</button>
+    <button onclick="sec_btn()" type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button onclick="suc_btn()" type="button" class="btn btn-outline-success">Success</button>
+    <button onclick="dan_btn()" type="button" class="btn btn-outline-danger">Danger</button>
+    <button onclick="war_btn()" type="button" class="btn btn-outline-warning">Warning</button>
+    <button onclick="info_btn()" type="button" class="btn btn-outline-info">Info</button>
+    <button onclick="light_btn()" type="button" class="btn btn-outline-light">Light</button>
+    <button onclick="dark_btn()" type="button" class="btn btn-outline-dark">Dark</button>
+    <!-- Example Code End -->
+
+    <script>
+        function pri_btn(){
+            document.getElementById("pri").innerHTML= "Primary button tapped";
+        }
+
+          function sec_btn(){
+            document.getElementById("sec").innerHTML= "Secondary button tapped";
+        }
+
+          function suc_btn(){
+            document.getElementById("suc").innerHTML= "Success button tapped";
+        }
+
+          function dan_btn(){
+            document.getElementById("dan").innerHTML= "Danger button tapped";
+        }
+
+          function war_btn(){
+            document.getElementById("war").innerHTML= "Warning button tapped";
+        }
+
+          function info_btn(){
+            document.getElementById("info").innerHTML= "Info button tapped";
+        }
+
+            function light_btn(){
+            document.getElementById("light").innerHTML= "light button tapped";
+        }
+
+          function dark_btn(){
+            document.getElementById("dark").innerHTML= "Dark button tapped";
+        }
+    </script>

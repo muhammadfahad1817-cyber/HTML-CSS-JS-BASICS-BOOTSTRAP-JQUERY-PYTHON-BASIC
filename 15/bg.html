@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url(1143.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        background-position: center;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 50px;
+        font-size: 50px;
+    }
+
+    h1 :hover {
+        color: brown;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: red;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        display: block;
+        margin: 60px auto;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+
+    }
+</style>
+
+<body>
+    <button onclick="navigatetoPage()">Order Now</button>
+    <script>
+        function navigatetoPage() {
+             <!-- window.location.href="name.html"; -->
+
+            window.open("name.html", "_blank")
+        }
+    </script>
+</body>
+
+</html>
