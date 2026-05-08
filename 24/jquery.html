@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <button>Start animation</button>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi perspiciatis vel aliquid cupiditate ab blanditiis voluptate! A ipsam, voluptates ipsa, qui corrupti aliquid vitae distinctio assumenda, delectus dolorem tempora nemo!</p>
+
+    <div style="background-color: burlywood; width: 100px; height: 100px; position: absolute; border: 2px solid black; text-align: center; margin-left: -7px; padding: 10px; ">
+This is div
+    </div>
+
+    <script>
+        $(document).ready(function
+        (){
+            $("button").click(function
+            (){
+                $("div").animate({left: '580px', bottom: '100px'});
+            })
+        })
+    </script>
+
+</body>
+</html>

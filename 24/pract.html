@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+        <input type="text" id="inp" value="fahad22@gmail.com">
+    <p id="par">This is first <b>bold</b> paragraph</p>
+    <button id="btn">Show Text</button>
+    <button id="btn2">Show html</button>
+    <button id="btn1">here</button>
+    <script>
+        $(document).ready(function
+        (){
+            $("#btn").click(function
+            (){
+               alert("Text: " + $("#par").text())
+            })
+
+            $("#btn2").click(function
+            (){
+                alert("HTML: " + $("#par").html())
+            })
+
+    $("#btn1").click(function (){
+    $("#inp").val("ali255@gmail.com");
+    alert($("#inp").val());           
+  });
+            
+        })
+    </script>
+</body>
+</html>

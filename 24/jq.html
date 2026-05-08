@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, minus possimus dolorem mollitia, facere tempore officiis at deleniti, et voluptates nostrum non! Iste, dolorem! Eum quod et similique autem at.</p>
+    <img id="image" src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w440/f_auto/primary/mhniosh8z6y6ouwfhnns" width="500px">
+    <br>
+    <button id="btn">Click</button>
+    <script>
+        $("#btn").click(function(){
+        $("p").css("background","yellow")
+        $("p").css("color","blue")
+        $("p").css("font-size","2rem")
+        $("p").css("padding","10px")
+        $("p").css("margin","15px")
+        $("#image").attr("src","https://img-cdn.publive.online/fit-in/640x430/filters:format(webp)/odishatv/media/post_attachments/uploadimage/library/16_9/16_9_0/recent_photo_1741509237.webp")
+        })
+    </script>
+</body>
+</html>

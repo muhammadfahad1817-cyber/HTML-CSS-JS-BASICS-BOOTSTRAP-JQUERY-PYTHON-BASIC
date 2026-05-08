@@ -1,6 +1,16 @@
+Github code push commands
+
 git init 
 git add .
 git commit -m "Initial commit"
 git branch -M main
 git push -u origin main
 Paste repo remote link at the end
+
+
+
+Github code update commands
+
+git add . 
+git commit -m "updated"
+git push -u origin main

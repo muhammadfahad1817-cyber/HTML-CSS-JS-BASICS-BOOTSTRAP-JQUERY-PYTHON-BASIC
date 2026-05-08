@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<style>
+#a1 :hover{
+    color: rgb(36, 22, 163);
+    cursor: grab;
+}
+
+#a2 :hover{
+    color: rgb(36, 22, 163);
+    cursor: grab;
+}
+
+
+#a3 :hover{
+    color: rgb(36, 22, 163);
+    cursor: grab;
+}
+
+
+#a4 :hover{
+    color: rgb(36, 22, 163);
+    cursor:grab ;
+}
+
+</style>
+<body>
+    <button id="btn">Click here</button>
+    <p id="par1">Good Morning</p>
+ <button>  <i class="fa-brands fa-wordpress"></i></button> 
+ <button><i class="fa-brands fa-github"></i></button>
+ <button id="btn1"><i class="fa-solid fa-list"></i></button>
+ <br>
+ <br>
+
+ <ul class="list" style="display: none;">
+   <a style="color: black; text-decoration: none; " href="https://www.amazon.com/home-page/s?k=home+page" id="a1"> <li>Home</li> </a>
+  <a style="color: rgb(0, 0, 0); text-decoration: none; " href="https://www.amazon.com/gp/help/customer/contact-us" id="a2" > <li>Contact</li>  </a>
+   <a style="color: rgb(0, 0, 0); text-decoration: none; " href="https://www.aboutamazon.com/about-us" id="a3" > <li>About</li> </a>
+   <a style="color: rgb(0, 0, 0); text-decoration: none; " href="https://www.amazon.com/shop/xolovecaro/list/35W2527EPVKCW" id="a4" >  <li>Shop</li> </a>
+ </ul>
+
+
+
+
+ <script>
+   $(document).ready(function(){
+    $("#btn").click(function(){
+        $("#par1").css({
+            "color":"red",
+            "font-weight": "bold",
+                "font-size": "50px",
+                "font-family": "Freestyle Script",
+                "text-align": "center"
+
+        })
+    })
+    $("#btn1").click(function
+    (){
+        $(".list").slideToggle();
+
+    })
+
+
+
+   })
+
+
+
+
+ 
+</script>
+
+
+      <img src="images.jpg" width="400px" id="img1" style="display: none;">
+    <br>
+    <br>
+
+    <button id="btn2">
+Display
+    </button>
+
+<script>
+
+$(document).ready(function(){
+$("#btn2").click(function(){
+$("#img1").show(5000);
+})
+
+})
+
+</script>
+
+   
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Login form</h1>
+    <center>
+        <form>
+    <label for="username">Name :</label>
+    <input type="text" name="username" id="username" placeholder="Enter your username" >
+    <br>
+    <br>
+    <label for="F_name">Father name :</label>
+    <input type="text" name="F_name" id="F_name" placeholder="Enter your Father name">
+    <br>
+    <br>
+    <label for="u_email">Enter your email:</label>
+    <input type="email" name="u_email" id="u_email" placeholder="Enter your email">
+    <br>
+    <br>
+    <label for="contact">Contact :</label>
+    <input type="phone" name="contact" id="contact" placeholder="+923344497342">
+    <br>
+    <br>
+    <label for="gender">Select your gender:</label>
+    <input type="radio" name="gender" value="male" id="gender">Male
+    <input type="radio" name="gender" value="Female" id="gender">Female
+    <br>
+    <br>
+    <input type="submit" value="login" id="btn">
+        </form>
+    </center>
+
+    <script>
+        $("#btn").click(function(e){
+            e.preventDefault();
+            console.log("Name :" +$("#username").val())
+            console.log("Father name :" +$("#F_name").val())
+            console.log("Enter your email:" +$("#u_email").val())
+            console.log("Contact no:" +$("#contact").val())
+            console.log("Select your gender:" +$("#gender").val())
+        })
+    </script>
+</body>
+</html>

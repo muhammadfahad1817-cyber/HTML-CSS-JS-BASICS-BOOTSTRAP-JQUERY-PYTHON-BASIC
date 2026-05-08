@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utensils Shop - Premium Kitchen Utensils</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">🍴 Utensils Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#compare">Compare</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Marquee -->
+<div class="marquee">
+    <marquee behavior="scroll" direction="left">
+        🔥 Mega Sale on Kitchen Utensils | Cookware | Cutlery | Limited Time Offer 🔥
+    </marquee>
+</div>
+
+<!-- Home Section -->
+<section id="home" class="hero fade-section">
+    <div class="container text-center">
+        <h1>Upgrade Your Kitchen with Quality Utensils</h1>
+        <p class="lead">Premium kitchen utensils designed for daily use & durability</p>
+        <a href="#products" class="btn btn-custom mt-3">Explore Products</a>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="fade-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Utensils</h2>
+        <div class="row">
+
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-product h-100">
+                    <img src="images/utensil1.jpg" class="card-img-top" alt="Cooking Pan Set">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Non-Stick Pan Set</h4>
+                        <p class="card-text">High quality non-stick cooking pans for daily use.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#productModal1">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-product h-100">
+                    <img src="images/utensil2.jpg" class="card-img-top" alt="Spoon Set">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Steel Spoon Set</h4>
+                        <p class="card-text">Durable stainless steel spoons for kitchen use.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#productModal2">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-product h-100">
+                    <img src="images/utensil3.jpg" class="card-img-top" alt="Dinner Set">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Dinner Plate Set</h4>
+                        <p class="card-text">Elegant ceramic dinner plates for home and guests.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#productModal3">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Modals -->
+
+<div class="modal fade" id="productModal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Non-Stick Pan Set</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Material: Aluminum</li>
+                    <li>Heat Resistant</li>
+                    <li>Easy to Clean</li>
+                </ul>
+                <img src="images/utensil1.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Steel Spoon Set</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Material: Stainless Steel</li>
+                    <li>Rust Proof</li>
+                    <li>Long Lasting</li>
+                </ul>
+                <img src="images/utensil2.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Dinner Plate Set</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Material: Ceramic</li>
+                    <li>Dishwasher Safe</li>
+                    <li>Stylish Design</li>
+                </ul>
+                <img src="images/utensil3.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About -->
+<section id="about" class="fade-section bg-dark text-white py-5">
+    <div class="container text-center">
+        <h2>About Utensils Shop</h2>
+        <p class="lead mt-4">
+            Utensils Shop provides high quality kitchen utensils including cookware, cutlery and dinner sets for homes and restaurants.
+        </p>
+    </div>
+</section>
+
+<!-- Compare -->
+<section id="compare" class="fade-section bg-dark text-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Compare Utensils</h2>
+        <div class="row text-center">
+
+            <div class="col-md-4">
+                <div class="card card-compare h-100">
+                    <div class="card-body">
+                        <h5>Pan Set</h5>
+                        <ul class="list-unstyled">
+                            <li>Material: Aluminum</li>
+                            <li>Use: Cooking</li>
+                            <li>Durability: High</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-compare h-100">
+                    <div class="card-body">
+                        <h5>Spoon Set</h5>
+                        <ul class="list-unstyled">
+                            <li>Material: Steel</li>
+                            <li>Use: Eating</li>
+                            <li>Durability: High</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-compare h-100">
+                    <div class="card-body">
+                        <h5>Dinner Set</h5>
+                        <ul class="list-unstyled">
+                            <li>Material: Ceramic</li>
+                            <li>Use: Dining</li>
+                            <li>Durability: Medium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="fade-section bg-dark text-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+             <form method="GET" action="" id="contactForm" onsubmit="showMessage()">
+
+<input type="text" name="name" class="form-control mb-3" placeholder="Your Name" required>
+
+<input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
+
+<textarea name="message" class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+
+<button type="submit" class="btn btn-custom w-100">Send Message</button>
+
+</form>
+
+<p id="successMsg" class="text-success text-center mt-3"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center py-3">
+    © 2026 Utensils Shop | E-Project
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

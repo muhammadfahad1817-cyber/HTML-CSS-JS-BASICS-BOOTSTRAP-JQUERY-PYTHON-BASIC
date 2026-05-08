@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+       <style>
+      .important{
+        color: red;
+        background-color: rgb(3, 14, 44);
+        max-width: 300px;
+        height: 50px;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .important:hover{
+        cursor: pointer;
+        color: green;
+        font-family: Freestyle Script;
+        font-size: x-large;
+        background-color: rgb(185, 170, 82);
+        text-transform:capitalize ;
+        transform: 6s;
+
+      }
+
+
+       </style>
+</head>
+<body>
+    <button>Apply</button>
+    <br>
+    <br>
+    <div id="div1">This is some text.</div>
+    <div id="div2">This is some text.</div>
+
+    <script>
+$(document).ready(function(){
+    $("button").click(function
+    (){
+        $("#div2").addClass("important").hide(5000).slideToggle(3000)
+    })
+})
+    </script>
+</body>
+</html>

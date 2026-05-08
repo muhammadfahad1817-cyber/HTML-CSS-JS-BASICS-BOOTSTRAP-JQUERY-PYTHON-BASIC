@@ -1,0 +1,190 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.9) !important;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffcc00 !important;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.btn-custom {
+    background: #ffcc00;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+/* Products Section Styling */ 
+.card-product {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-product .card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-product .card-body {
+    padding: 20px;
+}
+
+/* Product Card Hover Effects */
+.card-product .card-footer {
+    background: transparent;
+    border-top: none;
+}
+
+.card-product .btn-warning {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.card-product .btn-warning:hover {
+    background-color: #e6b800;
+}
+
+/* Modal Styling */
+.modal-content {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    color: white;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-header .btn-close {
+    background: #ffcc00;
+}
+
+.modal-body ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.modal-body img {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+/* About Section Styling */
+#about {
+    padding-top: 100px;
+}
+
+.marquee-about {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Compare Section Styling */
+#compare {
+    padding-top: 100px;
+}
+
+.card-compare {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-compare:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-compare .card-body {
+    padding: 30px;
+}
+
+.card-compare .card-body i {
+    font-size: 50px;
+}
+
+.card-compare .card-footer {
+    background: transparent;
+    border-top: none;
+}
+
+.card-compare ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.card-compare.h-100 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-compare .card-body {
+    flex-grow: 1;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+.greatgrandparent{
+    outline: red solid;
+    background-color: #ffffff;
+    width: 500px;
+    height: 550px;
+    margin: 20px;
+    padding-left: 10px;
+}
+.grandparent{
+    outline: red solid;
+    width: 300px;
+    height: 200px;
+    padding-left: 10px;
+    margin-left: 90px;
+    margin-top: 20px;
+
+}
+.parent{
+    outline: red solid;
+    width: 300px;
+    height: 150px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+.child{
+outline: red solid;
+width: 300px;
+height: 100px;
+margin-top: 20px;
+margin-left: 90px;
+padding-left: 10px;
+}
+</style>
+<body>
+
+<div class="greatgrandparent">Great grandparent
+
+
+    <div class="grandparent">
+Grandparent
+    </div>
+
+    <div class="parent">
+Parent
+    </div>
+
+    <div class="child">
+
+Child
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+$(".child").parent().css({"outline": "green solid"})       
+    })
+</script>
+
+
+</body>
+</html>

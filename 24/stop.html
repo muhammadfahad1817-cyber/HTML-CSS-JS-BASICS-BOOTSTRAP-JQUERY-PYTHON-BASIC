@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #container{
+            width: 50px;
+            height: 20px;
+            outline: rgb(41, 39, 29) solid;
+            background-color: bisque;
+        }
+
+           #container1{
+            width: 50px;
+            height: 20px;
+            outline: rgb(139, 36, 122) solid;
+            background-color: rgb(32, 172, 95);
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container"></div>
+    <br>
+    <br>
+    <div id="container1"></div>
+
+    <script>
+        $(document).ready(function
+        (){
+            $("#container1").click(function
+            (){
+                $("#container").hide(1000,function(){
+                  alert("This is box")
+                }
+                
+              
+                )
+            })
+        })
+    </script>
+</body>
+</html>

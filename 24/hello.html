@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+          #container{
+            width: 50px;
+            height: 20px;
+            outline: rgb(41, 39, 29) solid;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <p id="par1">This is paragraph</p>
+    <div id="container"></div>
+
+    <script>
+        $(document).ready(function
+        (){
+
+
+            $("#container").click(function
+            (){
+                $("#par1").css({"color": "green"}).hide(1000)
+            })
+            
+            
+
+        })
+    </script>
+</body>
+</html>
